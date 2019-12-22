@@ -1,0 +1,22 @@
+ion-content{
+    background: cornflowerblue;
+}
+.icon-avatar{
+    margin-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 25%;
+    width: 50%;
+    padding-bottom: 3%;
+}
+.ID{
+    text-align: center;
+    ion-label{
+        text-align: center;
+        font-size: 23px;
+    }
+}
+
+ion-item{
+    --background-hover: blue;
+}

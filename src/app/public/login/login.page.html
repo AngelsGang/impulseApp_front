@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>login</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-avatar class="icon-avatar">
+  <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y">
+</ion-avatar>
+
+<ion-content>
+  
+  <form [formGroup]="commentForm" (ngSubmit)="login(commentForm)">
+  
+    <ion-item class="ID">
+        <ion-label position="stacked">Identifiant</ion-label>
+        <ion-input formControlName="username"></ion-input>
+      </ion-item>
+      <ion-item class="ID">
+        <ion-label position="stacked">Mot de passe</ion-label>
+        <ion-input formControlName="password"></ion-input>
+      </ion-item>
+     
+      <ion-button expand="block" type="submit" [disabled]="!commentForm.valid">Login</ion-button>
+    </form>
+
+
+  <ion-button expand="block" color="secondary" routerLink="/register" routerDirection="forward">Register</ion-button>
+
+</ion-content>
